@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+            font-size: 80px;
+            font-family: Roboto;
+            font-weight: normal;
+            color: rgb(108, 180, 108);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-family: Roboto;
+            font-weight: normal;
+            color: rgb(20, 166, 196);
+            text-align: center;
+        }
+
+        p {
+            color: rgb(80, 80, 80);
+            font-family: Roboto;
+
+        }
+
+        .bodytext {
+            color: rgb(80, 80, 80);
+            font-family: Roboto;
+            text-align: center;
+
+        }
+
+        #banner {
+            width: 100%;
+            height: 260px;
+            alt: "Image";
+        }
+
+        #container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>Hellow</h1>
+    <img id="banner"
+         src="{{ url_for('static', filename='background.jpg') }}"
+    >
+    <h2>About hellow</h2>
+    <p>Big text</p>
+    <h2>Open posittions</h2>
+    <div style="text-align: center">
+        <button>Contact us</button>
+        <p class="bodytext">Copyright</p>
+    </div>
+</div>
+</body>
+</html>
