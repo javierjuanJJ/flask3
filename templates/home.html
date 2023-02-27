@@ -3,62 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        h1 {
-            font-size: 80px;
-            font-family: Roboto;
-            font-weight: normal;
-            color: rgb(108, 180, 108);
-            text-align: center;
-        }
 
-        h2 {
-            font-size: 32px;
-            font-family: Roboto;
-            font-weight: normal;
-            color: rgb(20, 166, 196);
-            text-align: center;
-        }
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-        p {
-            color: rgb(80, 80, 80);
-            font-family: Roboto;
-
-        }
-
-        .bodytext {
-            color: rgb(80, 80, 80);
-            font-family: Roboto;
-            text-align: center;
-
-        }
-
-        #banner {
-            width: 100%;
-            height: 260px;
-            alt: "Image";
-        }
-
-        #container {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-    </style>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<style>
+    #banner{
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
 </head>
 <body>
-<div id="container">
-    <h1>Hellow</h1>
-    <img id="banner"
+<div class="container">
+    <h1 class="text-enter mt-2 mb-4">Hellow</h1>
+    <img class="img-fluid" id="banner"
          src="{{ url_for('static', filename='background.jpg') }}"
-    >
-    <h2>About hellow</h2>
-    <p>Big text</p>
-    <h2>Open posittions</h2>
-    <div style="text-align: center">
-        <button>Contact us</button>
-        <p class="bodytext">Copyright</p>
+     alt="image">
+    <h2 class="text-enter mt-2 mb-4">About hellow</h2>
+    <p class="lead">Big text</p>
+    <h2 class="text-enter mt-2 mb-4">Open posittions</h2>
+    <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact us</button>
+        <p class="mt-4">Copyright</p>
     </div>
 </div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
 </body>
 </html>
