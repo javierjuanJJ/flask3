@@ -28,7 +28,7 @@ def hello_world():  # put application's code here
     return render_template('home.html', jobs = JOBS, company_name='')
 
 @app.route('/api/jobs')
-def hello_world():  # put application's code here
+def list_jobs():  # put application's code here
     return jsonify(JOBS)
 
 if __name__ == '__main__':
