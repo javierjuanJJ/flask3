@@ -19,13 +19,18 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="text-enter mt-2 mb-4">Hellow</h1>
+    <h1 class="text-enter mt-2 mb-4">{{ company_name }}</h1>
     <img class="img-fluid" id="banner"
          src="{{ url_for('static', filename='background.jpg') }}"
      alt="image">
     <h2 class="text-enter mt-2 mb-4">About hellow</h2>
     <p class="lead">Big text</p>
     <h2 class="text-enter mt-2 mb-4">Open posittions</h2>
+    <p>
+        {% for job in jobs %}
+            {% include 'jobItem.html' %}
+        {% endfor %}
+    </p>
     <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact us</button>
         <p class="mt-4">Copyright</p>
