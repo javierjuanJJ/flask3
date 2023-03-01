@@ -32,6 +32,7 @@ app = Flask(__name__)
 
 JOBS = database.load_jobs_from_db()
 
+
 @app.route('/')
 def hello_world():  # put application's code here
     return render_template('home.html', jobs = JOBS, company_name='')
