@@ -6,8 +6,8 @@ import os
 
 # db_connection_string = os.environ['DB_CONNECTION_STRING']
 
-db_connection_string = 'mysql+pymysql://ozk1rljme961lwrti1eo:pscale_pw_WQY9rfsHJdNDJW3EyfyrGsk3hlFqN1WKT3DZXxqrP4h@ap-south.connect.psdb.cloud/flask3?charset=utf8mb4'
-# db_connection_string = os.environ['DB_CONNECTION_STRING']
+#db_connection_string = 'mysql+pymysql://ozk1rljme961lwrti1eo:pscale_pw_WQY9rfsHJdNDJW3EyfyrGsk3hlFqN1WKT3DZXxqrP4h@ap-south.connect.psdb.cloud/flask3?charset=utf8mb4'
+db_connection_string = os.environ['DB_CONNECTION_STRING']
 
 engine = create_engine(
   db_connection_string,
