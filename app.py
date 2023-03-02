@@ -1,20 +1,11 @@
 from flask import Flask, render_template, jsonify, Response, json, request
 
 import database
+from Job import Job
 
 app = Flask(__name__)
 
-class Job:
-    def __init__(self, id, title, location, salary, currency, responsibilities, requirements, created_at, updated_at):
-        self.id = id
-        self.title = title
-        self.location = location
-        self.salary = salary
-        self.currency = currency
-        self.responsibities = responsibilities
-        self.requirements = requirements
-        self.created_at = created_at
-        self.updated_at = updated_at
+
 
 # JOBS = [
 #     {
@@ -49,10 +40,6 @@ class Job:
 def hello_world():  # put application's code here
     JOBS = database.load_jobs_from_db()
     return render_template('home.html', jobs = JOBS, company_name='')
-
-@app.route('/jobs')
-def hello_world2():  # put application's code here
-    return hello_world()
 
 @app.route('/api/jobs')
 def list_jobs():  # put application's code here

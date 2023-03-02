@@ -35,8 +35,6 @@ def load_jobs_from_db():
         result = conn.execute(text("select * from jobs"))
         jobs = []
         for row in result.all():
-            print(row)
-            # jobs.append(dict(row))
             jobs.append(row._mapping)
         return jobs
 
