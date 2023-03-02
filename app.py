@@ -50,6 +50,10 @@ def hello_world():  # put application's code here
     JOBS = database.load_jobs_from_db()
     return render_template('home.html', jobs = JOBS, company_name='')
 
+@app.route('/jobs')
+def hello_world2():  # put application's code here
+    return hello_world()
+
 @app.route('/api/jobs')
 def list_jobs():  # put application's code here
     JOBS = database.load_jobs_from_db()
